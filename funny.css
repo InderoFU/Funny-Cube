@@ -1,4 +1,4 @@
-.thing {
+.scene {
   width:10em;
   height:10em;
   perspective:10em;
@@ -7,11 +7,11 @@
 .cube {
   width:100%;
   height:100%;
-  animation: funny 1s infinite linear;
+  animation: spinThing 1s infinite linear;
   transform-style:preserve-3d;
 }
 
-@keyframes funny {
+@keyframes spinThing {
   from {transform: translateZ(-5em) rotateY(0deg);}
   to {transform: translateZ(-5em) rotateY(360deg);}
 }
@@ -25,19 +25,6 @@
   font-family: Comic Sans MS;
   line-height:10em;
   text-align:center;
-}
-
-.front {
-  transform: rotateY(0deg)
-}
-.right {
-  transform: rotateY(90deg)
-}
-.left {
-  transform: rotateY(-90deg)
-}
-.back {
-  transform: rotateY(180deg)
 }
 
 .front {
